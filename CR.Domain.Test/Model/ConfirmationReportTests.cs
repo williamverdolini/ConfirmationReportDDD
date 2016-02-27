@@ -33,11 +33,11 @@ namespace CR.Domain.Test.Model
             Assert.That(report.Details.Count(), Is.EqualTo(0));
         }
 
-        // due dettagli A e B si sovrappongo se:
-        // ilgiorno è lo stesso
+        // TDD Approach: two details are overlapped if:
+        // the Date dat is the same on both details AND
         // A.From <= B.From && A.To >= B.From
         // ||
-        //// A.From >= B.From && B.To >= A.From
+        // A.From >= B.From && B.To >= A.From
         [TestCaseSource(typeof(CheckOverlappedDetailsTestCaseFactory), "GetTestCases")]
         public bool CheckOverlappedDetails__TestMethod(ConfirmationReportDetail A, ConfirmationReportDetail B)
         {

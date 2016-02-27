@@ -114,7 +114,6 @@ namespace CR.Domain.Persistence.EF.Test.Services
             var actual = await service.FindById(id);
         }
 
-        //[TestCase("giofae", ReportStatus.Completed, ExpectedResult = 0)]
         [TestCase(1, ExpectedResult = "Customer 1")]
         [TestCase(3, ExpectedResult = "Customer 3")]
         public async Task<string> FindById__if_Ids_match__Return_item(int id)

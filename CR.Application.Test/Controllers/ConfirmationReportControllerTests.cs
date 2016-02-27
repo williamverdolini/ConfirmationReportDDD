@@ -75,7 +75,6 @@ namespace CR.Application.Test.Controllers
 
             var controller = new ConfirmationReportController(worker);
             controller.ModelState.AddModelError("fakeError", "fakeError");
-            //SubstituteUrlHelper(controller, "http://localhost/api/Reports/id/5");
 
             // Act
             var actual = await controller.SaveDraft(model);
@@ -133,7 +132,6 @@ namespace CR.Application.Test.Controllers
 
             var controller = new ConfirmationReportController(worker);
             controller.ModelState.AddModelError("fakeError", "fakeError");
-            //SubstituteUrlHelper(controller, "http://localhost/api/Reports/id/5");
 
             // Act
             var actual = await controller.Save(model);
@@ -152,7 +150,6 @@ namespace CR.Application.Test.Controllers
             worker.FindByNumber(model).Returns(new ConfirmationReportViewModel { Id = 5, ReportNumber = 1 });
 
             var controller = new ConfirmationReportController(worker);
-            //SubstituteUrlHelper(controller, "http://localhost/api/Reports/id/5");
 
             // Act
             var actual = await controller.FindByNumber(model);
@@ -171,7 +168,6 @@ namespace CR.Application.Test.Controllers
             worker.FindByNumber(model).Returns(new ConfirmationReportViewModel { Id = 5, ReportNumber = 1 });
 
             var controller = new ConfirmationReportController(worker);
-            //SubstituteUrlHelper(controller, "http://localhost/api/Reports/id/5");
 
             // Act
             var actual = await controller.FindByNumber(model) as OkNegotiatedContentResult<ConfirmationReportViewModel>;
@@ -226,7 +222,6 @@ namespace CR.Application.Test.Controllers
             worker.FindById(model).Returns(new ConfirmationReportViewModel { Id = 1 });
 
             var controller = new ConfirmationReportController(worker);
-            //SubstituteUrlHelper(controller, "http://localhost/api/Reports/id/5");
 
             // Act
             var actual = await controller.FindById(model);
@@ -245,7 +240,6 @@ namespace CR.Application.Test.Controllers
             worker.FindById(model).Returns(new ConfirmationReportViewModel { Id = 1 });
 
             var controller = new ConfirmationReportController(worker);
-            //SubstituteUrlHelper(controller, "http://localhost/api/Reports/id/5");
 
             // Act
             var actual = await controller.FindById(model) as OkNegotiatedContentResult<ConfirmationReportViewModel>;
