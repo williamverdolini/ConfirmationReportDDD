@@ -1,0 +1,8 @@
+packages
+ConfirmationReport.v12.suo
+*.csproj.user
+App_Data
+bower_components
+bin
+obj
+.vs/
