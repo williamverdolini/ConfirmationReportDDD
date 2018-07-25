@@ -10,7 +10,3 @@ run Bower installation command within _Spa_ folder, where is the _bower.json_ fi
     bower install
 
 Build and run in Visual Studio.
-
-### Contributing
-
-Fork the repository, change the code, open a pull request to your feature branch and you're done.
