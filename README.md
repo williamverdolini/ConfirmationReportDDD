@@ -1,6 +1,6 @@
 # Confirmation Report
 
-Refactoring into DDD supporting architecture of the Confirmation Report application
+Refactoring into DDD supporting architecture of the Confirmation Report application.
 
 ## Setup
 
