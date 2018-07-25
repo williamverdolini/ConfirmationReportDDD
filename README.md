@@ -13,4 +13,4 @@ Build and run in Visual Studio.
 
 ### Contributing
 
-Fork the repository, change the code, open a pull request to your feature branch.
+Fork the repository, change the code, open a pull request to your feature branch and you're done.
