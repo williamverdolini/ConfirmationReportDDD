@@ -2,7 +2,7 @@
 
 Refactoring into DDD supporting architecture of the Confirmation Report application.
 
-## Setup
+### Setup
 
 run Bower installation command within _Spa_ folder, where is the _bower.json_ file:
 
@@ -11,6 +11,6 @@ run Bower installation command within _Spa_ folder, where is the _bower.json_ fi
 
 Build and run in Visual Studio.
 
-## Contributing
+### Contributing
 
 Fork the repository, do your amazing job and when done, open a pull request to your feature branch.
